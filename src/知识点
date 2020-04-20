@@ -1,0 +1,7 @@
+TfidfTransformer(norm='l2', smooth_idf=True, sublinear_tf=False, use_idf=True)
+
+    smooth_idf=True：
+    idf = log((1+总文档数)/(1+包含ti的文档数)) +1
+    smooth_idf=False:
+    idf = log log((总文档数)/(包含ti的文档数)) +1
+    tf-idf =tf*idf
